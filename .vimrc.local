@@ -1,0 +1,27 @@
+source $VIMRUNTIME/mswin.vim
+Bundle 'pangloss/vim-javascript'
+
+:colorscheme mayansmoke
+colorscheme molokai
+
+set guifont=Consolas:h16
+
+
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
+autocmd BufRead *.ejs set filetype=html
+
+let NERDTreeShowHidden=0
+let NERDTreeShowBookmarks=0
+set guioptions-=m
+
+:set hidden
+
+imap <C-c> "+yi
+imap <C-x> "+c
+vmap <C-v> c<ESC>"+p
+imap <C-v> <ESC>"+pa
+
+map <C-b> :bp <CR> 
+map <C-n> :bn <CR>
