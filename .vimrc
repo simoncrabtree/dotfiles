@@ -3,7 +3,12 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-javascript'
 Plug 'scrooloose/syntastic'
 Plug 'itchyny/lightline.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'atweiden/vim-dragvisuals'
 call plug#end()
+
+"Show line numbers
+set number
 
 set t_Co=256
 syntax on
@@ -46,3 +51,14 @@ let g:lightline = {
     \   'syntastic': 'error',
     \ },
 \ }
+
+
+vmap  <expr>  <S-LEFT>   DVB_Drag('left')                     
+vmap  <expr>  <S-RIGHT>  DVB_Drag('right')                    
+vmap  <expr>  <S-DOWN>   DVB_Drag('down')                     
+vmap  <expr>  <S-UP>     DVB_Drag('up')                       
+vmap  <expr>  D        DVB_Duplicate()                      
+
+" Remove any introduced trailing whitespace after moving... 
+" let g:DVB_TrimWS = 1                                        
+"
