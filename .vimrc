@@ -5,6 +5,7 @@ Plug 'scrooloose/syntastic'
 Plug 'itchyny/lightline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'atweiden/vim-dragvisuals'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 "Show line numbers
