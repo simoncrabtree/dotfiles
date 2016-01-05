@@ -11,11 +11,8 @@ call plug#end()
 set number
 
 set t_Co=256
-syntax on
 set background=dark
 colorscheme distinguished
-
-filetype plugin indent on
 
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
