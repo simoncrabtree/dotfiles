@@ -11,6 +11,11 @@ call plug#end()
 "Show line numbers
 set number
 
+"Map Ctrl-S to Save
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
+
 set t_Co=256
 set background=dark
 colorscheme distinguished
