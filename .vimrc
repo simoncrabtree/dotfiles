@@ -6,6 +6,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'jdkanani/vim-material-theme'
 call plug#end()
 
 "Show line numbers
@@ -18,7 +19,8 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 
 set t_Co=256
 set background=dark
-colorscheme distinguished
+colorscheme material-theme
+set encoding=utf-8
 
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 
