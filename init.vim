@@ -30,3 +30,6 @@ autocmd! BufWritePost * Neomake
 
 "Show line numbers
 set number
+
+"Autocomplete on ctrl-space
+inoremap <Nul> <C-x><C-o>
