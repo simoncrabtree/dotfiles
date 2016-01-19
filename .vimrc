@@ -7,7 +7,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jdkanani/vim-material-theme'
+Plug 'ternjs/tern_for_vim'
 call plug#end()
+
+"Enable omnicompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 "Show line numbers
 set number
