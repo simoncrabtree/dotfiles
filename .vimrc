@@ -6,7 +6,6 @@ Plug 'itchyny/lightline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'valloric/YouCompleteMe'
 Plug 'jdkanani/vim-material-theme'
 call plug#end()
 
