@@ -27,3 +27,6 @@ function! neomake#makers#ft#javascript#eslint()
 endfunction
 let g:neomake_javascript_enabled_makers = ['eslint']
 autocmd! BufWritePost * Neomake
+
+"Show line numbers
+set number
