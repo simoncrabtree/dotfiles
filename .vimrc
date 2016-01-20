@@ -7,10 +7,21 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'jdkanani/vim-material-theme'
+Plug 'ternjs/tern_for_vim'
 call plug#end()
+
+"Enable omnicompletion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
 "Show line numbers
 set number
+
+"jj is ESC
+inoremap jj <ESC>
+
+"map leader to comma
+let mapleader = ","
 
 "Map Ctrl-S to Save
 noremap <silent> <C-S>          :update<CR>
@@ -39,7 +50,8 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs=1
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_exec = 'eslint_d'
+"let g:syntastic_javascript_eslint_exec = 'eslint_d'
+
 
 "Lightline
 set laststatus=2
