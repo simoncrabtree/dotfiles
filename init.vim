@@ -2,6 +2,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'mhartington/oceanic-next'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'benekastah/neomake'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 syntax enable
@@ -33,3 +35,6 @@ set number
 
 "Autocomplete on ctrl-space
 inoremap <Nul> <C-x><C-o>
+
+"Fuzzy Finder mapped to ctrl-p
+map <c-p> :FZF<CR>
