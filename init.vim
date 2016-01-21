@@ -5,6 +5,7 @@ Plug 'benekastah/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 syntax enable
@@ -42,6 +43,13 @@ inoremap <Nul> <C-x><C-o>
 
 "Fuzzy Finder mapped to ctrl-p
 map <c-p> :FZF<CR>
+
+"NERDTree on Ctrl-K Ctrl-B (like Sublime)
+map <c-k><c-b> :NERDTreeToggle<CR>
+" close NERDTree after a file is opened
+let g:NERDTreeQuitOnOpen=1
+" show hidden files in NERDTree
+let NERDTreeShowHidden=1
 
 " vim-airline ---------------------------------------------------------------{{{
   let g:airline#extensions#tabline#enabled = 1
