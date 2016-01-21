@@ -37,6 +37,9 @@ set number
 "Autocomplete on ctrl-space
 inoremap <Nul> <C-x><C-o>
 
+"jj mapped to esc
+:imap jj <Esc>
+
 "Fuzzy Finder mapped to ctrl-p
 map <c-p> :FZF<CR>
 
