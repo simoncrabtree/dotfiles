@@ -86,3 +86,6 @@ let NERDTreeShowHidden=1
   nmap <leader>8 <Plug>AirlineSelectTab8
   nmap <leader>9 <Plug>AirlineSelectTab9
 "}}}
+
+"Nice cursoor in insert mode
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
