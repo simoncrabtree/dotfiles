@@ -7,6 +7,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary'
+Plug 'atweiden/vim-dragvisuals'
 call plug#end()
 
 syntax enable
@@ -90,3 +91,9 @@ let NERDTreeShowHidden=1
 
 "Nice cursoor in insert mode
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
+vmap  <expr>  <S-LEFT>   DVB_Drag('left')                     
+vmap  <expr>  <S-RIGHT>  DVB_Drag('right')                    
+vmap  <expr>  <S-DOWN>   DVB_Drag('down')                     
+vmap  <expr>  <S-UP>     DVB_Drag('up')                       
+vmap  <expr>  D        DVB_Duplicate()                      
