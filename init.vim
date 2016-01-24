@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-commentary'
 Plug 'atweiden/vim-dragvisuals'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 syntax enable
