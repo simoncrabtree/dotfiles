@@ -16,6 +16,8 @@ syntax enable
 colorscheme OceanicNext
 set background=dark
 
+let mapleader = ","
+
 "Indent using spaces
 set tabstop=2
 set shiftwidth=2
@@ -98,3 +100,4 @@ vmap  <expr>  <S-RIGHT>  DVB_Drag('right')
 vmap  <expr>  <S-DOWN>   DVB_Drag('down')                     
 vmap  <expr>  <S-UP>     DVB_Drag('up')                       
 vmap  <expr>  D        DVB_Duplicate()                      
+
