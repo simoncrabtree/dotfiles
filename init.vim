@@ -4,15 +4,15 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'benekastah/neomake'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 syntax enable
-
+set encoding=utf8
 colorscheme OceanicNext
 set background=dark
 

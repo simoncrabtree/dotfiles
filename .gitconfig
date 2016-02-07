@@ -1,0 +1,36 @@
+[user]
+  name = Kevin Rutherford
+  email = kevin@rutherford-software.com
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = blue bold
+  frag = magenta
+  commit = yellow bold
+  old = red
+  new = green
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+[alias]
+  co = checkout
+  st = status
+  head = !git l -1
+  h = !git head
+  hp = "!. ~/bin/git_funcs && show_git_head"
+  r = !git l -30
+  ra = !git r --all
+  l = "!. ~/bin/git_funcs && pretty_git_log"
+  la = !git l --all
+
+[merge]
+  tool = vimdiff
+
+
