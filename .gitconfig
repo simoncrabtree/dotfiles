@@ -1,6 +1,6 @@
 [user]
-  name = Kevin Rutherford
-  email = kevin@rutherford-software.com
+  name = Simon Crabtree
+  email = simon@crabsticks.net
 [color]
   branch = auto
   diff = auto
@@ -34,3 +34,5 @@
   tool = vimdiff
 
 
+[push]
+	default = simple
