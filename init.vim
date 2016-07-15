@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 syntax enable
@@ -92,7 +93,7 @@ let NERDTreeShowHidden=1
   nmap <leader>9 <Plug>AirlineSelectTab9
 "}}}
 
-"Nice cursoor in insert mode
+"Nice cursor in insert mode
 :let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 vmap  <expr>  <S-LEFT>   DVB_Drag('left')                     
