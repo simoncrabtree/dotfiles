@@ -1,13 +1,15 @@
 call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'vim-javascript'
+Plug 'pangloss/vim-javascript'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'mxw/vim-jsx'
 Plug 'scrooloose/syntastic'
 Plug 'itchyny/lightline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'atweiden/vim-dragvisuals'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'jdkanani/vim-material-theme'
-Plug 'ternjs/tern_for_vim'
+Plug 'trevordmiller/nova-vim'
 call plug#end()
 
 "Enable omnicompletion
@@ -30,7 +32,7 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 
 set t_Co=256
 set background=dark
-colorscheme material-theme
+colorscheme nova
 set encoding=utf-8
 
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
@@ -49,9 +51,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_enable_signs=1
-let g:syntastic_javascript_checkers = ['eslint']
-"let g:syntastic_javascript_eslint_exec = 'eslint_d'
-
+let g:syntastic_javascript_checkers = ['standard']
 
 "Lightline
 set laststatus=2
