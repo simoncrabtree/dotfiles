@@ -3,6 +3,8 @@ sudo ufw enable
 
 sudo apt-get install software-properties-common
 sudo apt-get install curl
+#dconf-tools allow easy remapping of keys
+sudo apt-get install dconf-tools
 
 #neovim
 sudo add-apt-repository ppa:neovim-ppa/unstable
@@ -46,6 +48,15 @@ sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
 #Install EventStore
 curl -s https://packagecloud.io/install/repositories/EventStore/EventStore-OSS/script.deb.sh | sudo bash
+
+#Install vim8
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+
+#Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #aliases
 echo "alias gs='git status'">>~/.profile
