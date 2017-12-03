@@ -30,6 +30,11 @@ noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
 
+" Adjust system undo levels
+set undolevels=100
+" Use system clipboard
+set clipboard=unnamed
+
 set t_Co=256
 set background=dark
 colorscheme nova
@@ -79,3 +84,15 @@ vmap  <expr>  D        DVB_Duplicate()
 " Remove any introduced trailing whitespace after moving... 
 " let g:DVB_TrimWS = 1                                        
 "
+
+nmap <Leader><Leader> <c-^>
+
+nnoremap <Left> :vertical resize -1<CR>
+nnoremap <Right> :vertical resize +1<CR>
+nnoremap <Up> :resize -1<CR>
+nnoremap <Down> :resize +1<CR>
+" Disable arrow keys completely in Insert Mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
